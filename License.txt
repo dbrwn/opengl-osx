@@ -1,0 +1,3 @@
+This distribution contains source code adapted from Jason L. McKesson’s “Learning Modern 3D Graphics Programming” tutorials, Version 0.3.8.  The portions used are distributed under the terms of the MIT License, as specified in “./McKesson License.txt”.
+
+The remainder of the materials in this distribution are copyrighted and distributed under the terms of the MIT License, as specified in the “./MIT License.txt” file.
