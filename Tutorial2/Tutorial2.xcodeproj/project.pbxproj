@@ -420,7 +420,7 @@
 					"VERTEX=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Tutorial2_Vertex-Info.plist";
+				INFOPLIST_FILE = "Tutorial/Tutorial2_Vertex-Info.plist";
 				PRODUCT_NAME = Tutorial2_Vertex;
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,7 +434,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial/Tutorial2-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "VERTEX=1";
-				INFOPLIST_FILE = "Tutorial2_Vertex-Info.plist";
+				INFOPLIST_FILE = "Tutorial/Tutorial2_Vertex-Info.plist";
 				PRODUCT_NAME = Tutorial2_Vertex;
 				WRAPPER_EXTENSION = app;
 			};
