@@ -121,7 +121,7 @@ const GLfloat vertexPositions[] = {
 
 #pragma mark superclass method overrides
 
-//
+// 
 - (void) awakeFromNib
 {
     NSOpenGLPixelFormatAttribute attributes [] = {
@@ -134,12 +134,19 @@ const GLfloat vertexPositions[] = {
     [self setPixelFormat:pf];
 }
 
-// if this method gets called (e.g., this class is no longer unarchived from the NIB) the
-// pixel format won't get set up.  in this case you can still init super with the
-// initWithFrame:pixelformat: method.
+// this method is only called if a DBOpenGLView objection is programatically created
+// (e.g., not unarchived from a NIB file)
 - (id)initWithFrame:(NSRect)frame
 {
-    self = [super initWithFrame:frame];
+    NSOpenGLPixelFormatAttribute attributes [] = {
+        NSOpenGLPFADepthSize, (NSOpenGLPixelFormatAttribute)16, // 16 bit depth buffer
+        NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
+        (NSOpenGLPixelFormatAttribute)0
+    };
+    
+    NSOpenGLPixelFormat *pf = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes];
+
+    self = [super initWithFrame:frame pixelFormat:pf];
     if (self) {
         // Initialization code here.
     }
