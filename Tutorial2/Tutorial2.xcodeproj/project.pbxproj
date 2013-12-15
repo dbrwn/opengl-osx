@@ -20,15 +20,28 @@
 		556F320F185A1AD500DF4CA7 /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F320D185A1AD500DF4CA7 /* TutorialApp.xib */; };
 		55E72AAA185D710700D9046B /* VertexPosition.fs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AA6185D6FAA00D9046B /* VertexPosition.fs */; };
 		55E72AAB185D710B00D9046B /* VertexPosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AA8185D6FB300D9046B /* VertexPosition.vs */; };
+		55E72AAE185D77A300D9046B /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55299AFE1859658900546541 /* DBAppDelegate.m */; };
+		55E72AAF185D77A300D9046B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55299AF71859658900546541 /* main.m */; };
+		55E72AB0185D77A300D9046B /* DBOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55299B2E185972CF00546541 /* DBOpenGLView.m */; };
+		55E72AB2185D77A300D9046B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55299B1F185968C100546541 /* OpenGL.framework */; };
+		55E72AB3185D77A300D9046B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55299AEB1859658900546541 /* Cocoa.framework */; };
+		55E72AB5185D77A300D9046B /* VertexPosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AA8185D6FB300D9046B /* VertexPosition.vs */; };
+		55E72AB6185D77A300D9046B /* VertexPosition.fs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AA6185D6FAA00D9046B /* VertexPosition.fs */; };
+		55E72AB7185D77A300D9046B /* FragPosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55299B281859728700546541 /* FragPosition.vs */; };
+		55E72AB8185D77A300D9046B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 556F320A185A1AC100DF4CA7 /* Credits.rtf */; };
+		55E72AB9185D77A300D9046B /* FragPosition.fs in Resources */ = {isa = PBXBuildFile; fileRef = 55299B271859728700546541 /* FragPosition.fs */; };
+		55E72ABA185D77A300D9046B /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F320D185A1AD500DF4CA7 /* TutorialApp.xib */; };
+		55E72ABB185D77A300D9046B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55299B031859658900546541 /* Images.xcassets */; };
+		55E72ABC185D77A300D9046B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556F3207185A1AAA00DF4CA7 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		55299AE81859658900546541 /* Tutorial2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55299AE81859658900546541 /* Tutorial2_Fragment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial2_Fragment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55299AEB1859658900546541 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		55299AEE1859658900546541 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		55299AEF1859658900546541 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		55299AF01859658900546541 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		55299AF31859658900546541 /* Tutorial2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tutorial2-Info.plist"; path = "Tutorial/Tutorial2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		55299AF31859658900546541 /* Tutorial2_Fragment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tutorial2_Fragment-Info.plist"; path = "Tutorial/Tutorial2_Fragment-Info.plist"; sourceTree = SOURCE_ROOT; };
 		55299AF71859658900546541 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Tutorial/main.m; sourceTree = SOURCE_ROOT; };
 		55299AF91859658900546541 /* Tutorial2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tutorial2-Prefix.pch"; path = "Tutorial/Tutorial2-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		55299AFD1859658900546541 /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DBAppDelegate.h; path = Tutorial/DBAppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -44,6 +57,8 @@
 		556F320E185A1AD500DF4CA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Tutorial/en.lproj/TutorialApp.xib; sourceTree = SOURCE_ROOT; };
 		55E72AA6185D6FAA00D9046B /* VertexPosition.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = VertexPosition.fs; path = Tutorial/VertexPosition.fs; sourceTree = SOURCE_ROOT; };
 		55E72AA8185D6FB300D9046B /* VertexPosition.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = VertexPosition.vs; path = Tutorial/VertexPosition.vs; sourceTree = SOURCE_ROOT; };
+		55E72AC0185D77A300D9046B /* Tutorial2_Vertex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial2_Vertex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E72AC1185D77A300D9046B /* Tutorial2_Vertex-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tutorial2_Vertex-Info.plist"; path = "/Users/dave/Code/GlWork/opengl-osx/Tutorial2/Tutorial2_Vertex-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +68,15 @@
 			files = (
 				55299B20185968C100546541 /* OpenGL.framework in Frameworks */,
 				55299AEC1859658900546541 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E72AB1185D77A300D9046B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E72AB2185D77A300D9046B /* OpenGL.framework in Frameworks */,
+				55E72AB3185D77A300D9046B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +95,8 @@
 		55299AE91859658900546541 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55299AE81859658900546541 /* Tutorial2.app */,
+				55299AE81859658900546541 /* Tutorial2_Fragment.app */,
+				55E72AC0185D77A300D9046B /* Tutorial2_Vertex.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,7 +139,8 @@
 		55299AF21859658900546541 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				55299AF31859658900546541 /* Tutorial2-Info.plist */,
+				55299AF31859658900546541 /* Tutorial2_Fragment-Info.plist */,
+				55E72AC1185D77A300D9046B /* Tutorial2_Vertex-Info.plist */,
 				55299AF91859658900546541 /* Tutorial2-Prefix.pch */,
 				55299AF71859658900546541 /* main.m */,
 				556F3207185A1AAA00DF4CA7 /* InfoPlist.strings */,
@@ -137,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		55299AE71859658900546541 /* Tutorial2 */ = {
+		55299AE71859658900546541 /* Tutorial2_Fragment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55299B191859658900546541 /* Build configuration list for PBXNativeTarget "Tutorial2" */;
+			buildConfigurationList = 55299B191859658900546541 /* Build configuration list for PBXNativeTarget "Tutorial2_Fragment" */;
 			buildPhases = (
 				55299AE41859658900546541 /* Sources */,
 				55299AE51859658900546541 /* Frameworks */,
@@ -149,9 +175,26 @@
 			);
 			dependencies = (
 			);
-			name = Tutorial2;
+			name = Tutorial2_Fragment;
 			productName = Tutorial2;
-			productReference = 55299AE81859658900546541 /* Tutorial2.app */;
+			productReference = 55299AE81859658900546541 /* Tutorial2_Fragment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55E72AAC185D77A300D9046B /* Tutorial2_Vetex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E72ABD185D77A300D9046B /* Build configuration list for PBXNativeTarget "Tutorial2_Vetex" */;
+			buildPhases = (
+				55E72AAD185D77A300D9046B /* Sources */,
+				55E72AB1185D77A300D9046B /* Frameworks */,
+				55E72AB4185D77A300D9046B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial2_Vetex;
+			productName = Tutorial2;
+			productReference = 55E72AC0185D77A300D9046B /* Tutorial2_Vertex.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +220,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55299AE71859658900546541 /* Tutorial2 */,
+				55299AE71859658900546541 /* Tutorial2_Fragment */,
+				55E72AAC185D77A300D9046B /* Tutorial2_Vetex */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +242,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55E72AB4185D77A300D9046B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E72AB5185D77A300D9046B /* VertexPosition.vs in Resources */,
+				55E72AB6185D77A300D9046B /* VertexPosition.fs in Resources */,
+				55E72AB7185D77A300D9046B /* FragPosition.vs in Resources */,
+				55E72AB8185D77A300D9046B /* Credits.rtf in Resources */,
+				55E72AB9185D77A300D9046B /* FragPosition.fs in Resources */,
+				55E72ABA185D77A300D9046B /* TutorialApp.xib in Resources */,
+				55E72ABB185D77A300D9046B /* Images.xcassets in Resources */,
+				55E72ABC185D77A300D9046B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,6 +267,16 @@
 				55299AFF1859658900546541 /* DBAppDelegate.m in Sources */,
 				55299AF81859658900546541 /* main.m in Sources */,
 				55299B2F185972CF00546541 /* DBOpenGLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E72AAD185D77A300D9046B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E72AAE185D77A300D9046B /* DBAppDelegate.m in Sources */,
+				55E72AAF185D77A300D9046B /* main.m in Sources */,
+				55E72AB0185D77A300D9046B /* DBOpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +385,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial/Tutorial2-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Tutorial/Tutorial2-Info.plist";
-				PRODUCT_NAME = Tutorial2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"FRAGMENT=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Tutorial/Tutorial2_Fragment-Info.plist";
+				PRODUCT_NAME = Tutorial2_Fragment;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -329,8 +402,40 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial/Tutorial2-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Tutorial/Tutorial2-Info.plist";
-				PRODUCT_NAME = Tutorial2;
+				GCC_PREPROCESSOR_DEFINITIONS = "FRAGMENT=1";
+				INFOPLIST_FILE = "$(SRCROOT)/Tutorial/Tutorial2_Fragment-Info.plist";
+				PRODUCT_NAME = Tutorial2_Fragment;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		55E72ABE185D77A300D9046B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial/Tutorial2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERTEX=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial2_Vertex-Info.plist";
+				PRODUCT_NAME = Tutorial2_Vertex;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55E72ABF185D77A300D9046B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial/Tutorial2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "VERTEX=1";
+				INFOPLIST_FILE = "Tutorial2_Vertex-Info.plist";
+				PRODUCT_NAME = Tutorial2_Vertex;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -347,11 +452,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55299B191859658900546541 /* Build configuration list for PBXNativeTarget "Tutorial2" */ = {
+		55299B191859658900546541 /* Build configuration list for PBXNativeTarget "Tutorial2_Fragment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55299B1A1859658900546541 /* Debug */,
 				55299B1B1859658900546541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E72ABD185D77A300D9046B /* Build configuration list for PBXNativeTarget "Tutorial2_Vetex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E72ABE185D77A300D9046B /* Debug */,
+				55E72ABF185D77A300D9046B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

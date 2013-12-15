@@ -67,8 +67,13 @@
 {
     GLuint shader1, shader2;
     
+#if FRAGMENT == 1
     shader1 = [self makeShaderOfType:GL_VERTEX_SHADER withShaderResource:@"FragPosition"];
     shader2 = [self makeShaderOfType:GL_FRAGMENT_SHADER withShaderResource:@"FragPosition"];
+#elif VERTEX == 1
+    shader1 = [self makeShaderOfType:GL_VERTEX_SHADER withShaderResource:@"VertexPosition"];
+    shader2 = [self makeShaderOfType:GL_FRAGMENT_SHADER withShaderResource:@"VertexPosition"];
+#endif
     
     shaderProgram = glCreateProgram();
     
@@ -90,6 +95,15 @@
 }
 
 // the vertex positions we plan to render
+#if FRAGMENT == 1
+// right triangle for the frag position shaders
+const GLfloat vertexPositions[] = {
+    0.75f, 0.75f, 0.0f, 1.0f,
+    0.75f, -0.75f, 0.0f, 1.0f,
+    -0.75f, -0.75f, 0.0f, 1.0f
+};
+#elif VERTEX == 1
+// isosceles triangle for vertex position shaders
 const GLfloat vertexPositions[] = {
     0.0f,    0.5f, 0.0f, 1.0f,
     0.5f, -0.366f, 0.0f, 1.0f,
@@ -98,6 +112,7 @@ const GLfloat vertexPositions[] = {
     0.0f,    1.0f, 0.0f, 1.0f,
     0.0f,    0.0f, 1.0f, 1.0f
 };
+#endif
 
 // this method obtains a buffer from the OpenGL server and loads our static data into it
 - (void) initializeVertexBuffer
