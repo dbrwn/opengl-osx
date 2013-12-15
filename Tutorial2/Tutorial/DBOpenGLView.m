@@ -186,10 +186,12 @@ const GLfloat vertexPositions[] = {
     
     glBindBuffer(GL_ARRAY_BUFFER, positionBufferObject);
     glEnableVertexAttribArray(0);
-    glEnableVertexAttribArray(1);
-    
     glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, 0);
+
+#if VERTEX == 1
+    glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 0, (void*)48);
+#endif
     
     glDrawArrays(GL_TRIANGLES, 0, 3);
     
