@@ -58,7 +58,7 @@
 		55E72AA6185D6FAA00D9046B /* VertexPosition.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = VertexPosition.fs; path = Tutorial/VertexPosition.fs; sourceTree = SOURCE_ROOT; };
 		55E72AA8185D6FB300D9046B /* VertexPosition.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = VertexPosition.vs; path = Tutorial/VertexPosition.vs; sourceTree = SOURCE_ROOT; };
 		55E72AC0185D77A300D9046B /* Tutorial2_Vertex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial2_Vertex.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		55E72AC1185D77A300D9046B /* Tutorial2_Vertex-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tutorial2_Vertex-Info.plist"; path = "/Users/dave/Code/GlWork/opengl-osx/Tutorial2/Tutorial2_Vertex-Info.plist"; sourceTree = "<absolute>"; };
+		55E72AC1185D77A300D9046B /* Tutorial2_Vertex-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tutorial2_Vertex-Info.plist"; path = "/Users/dave/Code/GlWork/opengl-osx/Tutorial2/Tutorial/Tutorial2_Vertex-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
