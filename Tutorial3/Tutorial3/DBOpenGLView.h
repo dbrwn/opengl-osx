@@ -24,6 +24,9 @@
     // stores the height and width of the view at last resize
     GLsizei viewHeight, viewWidth;
 
+    // stores the location of the offset vector
+    GLuint offsetLocation;
+    
     // reference to the display link resource
     CVDisplayLinkRef displayLink;
     
@@ -35,6 +38,7 @@
     
     // current render time, measured in seconds from the start of animation
     GLfloat renderTime;
+    
 }
 
 @end

@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552C5C69185E2D37009D84FD /* DBOpenGLView_CPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72B07185D80B800D9046B /* DBOpenGLView_CPU.m */; };
+		552C5C6D185E6FDC009D84FD /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72AE3185D802800D9046B /* DBAppDelegate.m */; };
+		552C5C6F185E6FDC009D84FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72ADC185D802800D9046B /* main.m */; };
+		552C5C71185E6FDC009D84FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72B1A185D85B300D9046B /* QuartzCore.framework */; };
+		552C5C72185E6FDC009D84FD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72B04185D806F00D9046B /* OpenGL.framework */; };
+		552C5C73185E6FDC009D84FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72AD0185D802800D9046B /* Cocoa.framework */; };
+		552C5C75185E6FDC009D84FD /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E72B16185D830E00D9046B /* TutorialApp.xib */; };
+		552C5C78185E6FDC009D84FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AD9185D802800D9046B /* InfoPlist.strings */; };
+		552C5C79185E6FDC009D84FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AE8185D802800D9046B /* Images.xcassets */; };
+		552C5C7A185E6FDC009D84FD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55E72ADF185D802800D9046B /* Credits.rtf */; };
+		552C5C80185E70A9009D84FD /* DBOpenGLView_GPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 552C5C67185E2C15009D84FD /* DBOpenGLView_GPU.m */; };
+		552C5C81185E70C6009D84FD /* VertexOffsetPosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 552C5C6A185E6FCC009D84FD /* VertexOffsetPosition.vs */; };
+		552C5C84185E745F009D84FD /* VertexOffsetPosition.fs in Resources */ = {isa = PBXBuildFile; fileRef = 552C5C83185E7452009D84FD /* VertexOffsetPosition.fs */; };
 		55E72AD1185D802800D9046B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72AD0185D802800D9046B /* Cocoa.framework */; };
 		55E72ADB185D802800D9046B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AD9185D802800D9046B /* InfoPlist.strings */; };
 		55E72ADD185D802800D9046B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72ADC185D802800D9046B /* main.m */; };
@@ -14,20 +27,22 @@
 		55E72AE4185D802800D9046B /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72AE3185D802800D9046B /* DBAppDelegate.m */; };
 		55E72AE9185D802800D9046B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AE8185D802800D9046B /* Images.xcassets */; };
 		55E72B05185D806F00D9046B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72B04185D806F00D9046B /* OpenGL.framework */; };
-		55E72B08185D80B800D9046B /* DBOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72B07185D80B800D9046B /* DBOpenGLView.m */; };
-		55E72B14185D82E800D9046B /* VertexPosition.fs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72B10185D82DF00D9046B /* VertexPosition.fs */; };
-		55E72B15185D82EB00D9046B /* VertexPosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72B11185D82DF00D9046B /* VertexPosition.vs */; };
 		55E72B19185D831C00D9046B /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E72B16185D830E00D9046B /* TutorialApp.xib */; };
 		55E72B1B185D85B300D9046B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72B1A185D85B300D9046B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		55E72ACD185D802800D9046B /* Tutorial3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		552C5C67185E2C15009D84FD /* DBOpenGLView_GPU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_GPU.m; sourceTree = "<group>"; };
+		552C5C6A185E6FCC009D84FD /* VertexOffsetPosition.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = VertexOffsetPosition.vs; sourceTree = "<group>"; };
+		552C5C7E185E6FDC009D84FD /* Tutorial3_GPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3_GPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		552C5C7F185E6FDC009D84FD /* Tutorial3_GPU-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial3_GPU-Info.plist"; sourceTree = "<group>"; };
+		552C5C83185E7452009D84FD /* VertexOffsetPosition.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = VertexOffsetPosition.fs; sourceTree = "<group>"; };
+		55E72ACD185D802800D9046B /* Tutorial3_CPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3_CPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E72AD0185D802800D9046B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		55E72AD3185D802800D9046B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		55E72AD4185D802800D9046B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		55E72AD5185D802800D9046B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		55E72AD8185D802800D9046B /* Tutorial3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial3-Info.plist"; sourceTree = "<group>"; };
+		55E72AD8185D802800D9046B /* Tutorial3_CPU-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial3_CPU-Info.plist"; sourceTree = "<group>"; };
 		55E72ADA185D802800D9046B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55E72ADC185D802800D9046B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55E72ADE185D802800D9046B /* Tutorial3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tutorial3-Prefix.pch"; sourceTree = "<group>"; };
@@ -37,7 +52,7 @@
 		55E72AE8185D802800D9046B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		55E72B04185D806F00D9046B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		55E72B06185D80B800D9046B /* DBOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOpenGLView.h; sourceTree = "<group>"; };
-		55E72B07185D80B800D9046B /* DBOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView.m; sourceTree = "<group>"; };
+		55E72B07185D80B800D9046B /* DBOpenGLView_CPU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_CPU.m; sourceTree = "<group>"; };
 		55E72B10185D82DF00D9046B /* VertexPosition.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertexPosition.fs; sourceTree = "<group>"; };
 		55E72B11185D82DF00D9046B /* VertexPosition.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertexPosition.vs; sourceTree = "<group>"; };
 		55E72B17185D830E00D9046B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TutorialApp.xib; sourceTree = "<group>"; };
@@ -45,6 +60,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		552C5C70185E6FDC009D84FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552C5C71185E6FDC009D84FD /* QuartzCore.framework in Frameworks */,
+				552C5C72185E6FDC009D84FD /* OpenGL.framework in Frameworks */,
+				552C5C73185E6FDC009D84FD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55E72ACA185D802800D9046B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,7 +95,8 @@
 		55E72ACE185D802800D9046B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55E72ACD185D802800D9046B /* Tutorial3.app */,
+				55E72ACD185D802800D9046B /* Tutorial3_CPU.app */,
+				552C5C7E185E6FDC009D84FD /* Tutorial3_GPU.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +128,8 @@
 				55E72AE2185D802800D9046B /* DBAppDelegate.h */,
 				55E72AE3185D802800D9046B /* DBAppDelegate.m */,
 				55E72B06185D80B800D9046B /* DBOpenGLView.h */,
-				55E72B07185D80B800D9046B /* DBOpenGLView.m */,
+				55E72B07185D80B800D9046B /* DBOpenGLView_CPU.m */,
+				552C5C67185E2C15009D84FD /* DBOpenGLView_GPU.m */,
 				55E72AE8185D802800D9046B /* Images.xcassets */,
 				55E72B16185D830E00D9046B /* TutorialApp.xib */,
 				55E72B0F185D82CB00D9046B /* Shaders */,
@@ -114,7 +141,8 @@
 		55E72AD7185D802800D9046B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				55E72AD8185D802800D9046B /* Tutorial3-Info.plist */,
+				55E72AD8185D802800D9046B /* Tutorial3_CPU-Info.plist */,
+				552C5C7F185E6FDC009D84FD /* Tutorial3_GPU-Info.plist */,
 				55E72AD9185D802800D9046B /* InfoPlist.strings */,
 				55E72ADC185D802800D9046B /* main.m */,
 				55E72ADE185D802800D9046B /* Tutorial3-Prefix.pch */,
@@ -128,6 +156,8 @@
 			children = (
 				55E72B10185D82DF00D9046B /* VertexPosition.fs */,
 				55E72B11185D82DF00D9046B /* VertexPosition.vs */,
+				552C5C6A185E6FCC009D84FD /* VertexOffsetPosition.vs */,
+				552C5C83185E7452009D84FD /* VertexOffsetPosition.fs */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -135,9 +165,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		55E72ACC185D802800D9046B /* Tutorial3 */ = {
+		552C5C6B185E6FDC009D84FD /* Tutorial3_GPU */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55E72AFE185D802800D9046B /* Build configuration list for PBXNativeTarget "Tutorial3" */;
+			buildConfigurationList = 552C5C7B185E6FDC009D84FD /* Build configuration list for PBXNativeTarget "Tutorial3_GPU" */;
+			buildPhases = (
+				552C5C6C185E6FDC009D84FD /* Sources */,
+				552C5C70185E6FDC009D84FD /* Frameworks */,
+				552C5C74185E6FDC009D84FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial3_GPU;
+			productName = Tutorial3;
+			productReference = 552C5C7E185E6FDC009D84FD /* Tutorial3_GPU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55E72ACC185D802800D9046B /* Tutorial3_CPU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E72AFE185D802800D9046B /* Build configuration list for PBXNativeTarget "Tutorial3_CPU" */;
 			buildPhases = (
 				55E72AC9185D802800D9046B /* Sources */,
 				55E72ACA185D802800D9046B /* Frameworks */,
@@ -147,9 +194,9 @@
 			);
 			dependencies = (
 			);
-			name = Tutorial3;
+			name = Tutorial3_CPU;
 			productName = Tutorial3;
-			productReference = 55E72ACD185D802800D9046B /* Tutorial3.app */;
+			productReference = 55E72ACD185D802800D9046B /* Tutorial3_CPU.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,19 +222,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55E72ACC185D802800D9046B /* Tutorial3 */,
+				55E72ACC185D802800D9046B /* Tutorial3_CPU */,
+				552C5C6B185E6FDC009D84FD /* Tutorial3_GPU */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		552C5C74185E6FDC009D84FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552C5C84185E745F009D84FD /* VertexOffsetPosition.fs in Resources */,
+				552C5C81185E70C6009D84FD /* VertexOffsetPosition.vs in Resources */,
+				552C5C75185E6FDC009D84FD /* TutorialApp.xib in Resources */,
+				552C5C78185E6FDC009D84FD /* InfoPlist.strings in Resources */,
+				552C5C79185E6FDC009D84FD /* Images.xcassets in Resources */,
+				552C5C7A185E6FDC009D84FD /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55E72ACB185D802800D9046B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				55E72B19185D831C00D9046B /* TutorialApp.xib in Resources */,
-				55E72B15185D82EB00D9046B /* VertexPosition.vs in Resources */,
-				55E72B14185D82E800D9046B /* VertexPosition.fs in Resources */,
 				55E72ADB185D802800D9046B /* InfoPlist.strings in Resources */,
 				55E72AE9185D802800D9046B /* Images.xcassets in Resources */,
 				55E72AE1185D802800D9046B /* Credits.rtf in Resources */,
@@ -197,12 +256,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		552C5C6C185E6FDC009D84FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552C5C6D185E6FDC009D84FD /* DBAppDelegate.m in Sources */,
+				552C5C80185E70A9009D84FD /* DBOpenGLView_GPU.m in Sources */,
+				552C5C6F185E6FDC009D84FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55E72AC9185D802800D9046B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E72B08185D80B800D9046B /* DBOpenGLView.m in Sources */,
 				55E72AE4185D802800D9046B /* DBAppDelegate.m in Sources */,
+				552C5C69185E2D37009D84FD /* DBOpenGLView_CPU.m in Sources */,
 				55E72ADD185D802800D9046B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +306,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		552C5C7C185E6FDC009D84FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial3/Tutorial3_GPU-Info.plist";
+				PRODUCT_NAME = Tutorial3_GPU;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		552C5C7D185E6FDC009D84FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial3/Tutorial3_GPU-Info.plist";
+				PRODUCT_NAME = Tutorial3_GPU;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		55E72AFC185D802800D9046B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,7 +407,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
-				INFOPLIST_FILE = "Tutorial3/Tutorial3-Info.plist";
+				INFOPLIST_FILE = "Tutorial3/Tutorial3_CPU-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -325,7 +420,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
-				INFOPLIST_FILE = "Tutorial3/Tutorial3-Info.plist";
+				INFOPLIST_FILE = "Tutorial3/Tutorial3_CPU-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -334,6 +429,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		552C5C7B185E6FDC009D84FD /* Build configuration list for PBXNativeTarget "Tutorial3_GPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552C5C7C185E6FDC009D84FD /* Debug */,
+				552C5C7D185E6FDC009D84FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55E72AC8185D802800D9046B /* Build configuration list for PBXProject "Tutorial3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -343,13 +447,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55E72AFE185D802800D9046B /* Build configuration list for PBXNativeTarget "Tutorial3" */ = {
+		55E72AFE185D802800D9046B /* Build configuration list for PBXNativeTarget "Tutorial3_CPU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55E72AFF185D802800D9046B /* Debug */,
 				55E72B00185D802800D9046B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
