@@ -3,7 +3,8 @@
 //  Tutorial1
 //
 //  Created by David Brown on 12/11/13.
-//  Copyright (c) 2013 David T. Brown. All rights reserved.
+//  Copyright (c) 2013 David T. Brown.
+//  This file is licensed under the MIT License.
 //
 
 #import "DBOpenGLView.h"
@@ -110,7 +111,7 @@ const GLfloat vertexPositions[] = {
 
 
 // this method resizes the OpenGL viewport to match this view's bounds when needed
-- (void) resizeGL
+- (void) reshape
 {
     if( (viewHeight != self.bounds.size.height) || (viewWidth != self.bounds.size.width) ) {
         
@@ -142,7 +143,15 @@ const GLfloat vertexPositions[] = {
 // initWithFrame:pixelformat: method.
 - (id)initWithFrame:(NSRect)frame
 {
-    self = [super initWithFrame:frame];
+    NSOpenGLPixelFormatAttribute attributes [] = {
+        NSOpenGLPFADepthSize, (NSOpenGLPixelFormatAttribute)16, // 16 bit depth buffer
+        NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
+        (NSOpenGLPixelFormatAttribute)0
+    };
+    
+    NSOpenGLPixelFormat *pf = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes];
+    
+    self = [super initWithFrame:frame pixelFormat:pf];
     if (self) {
         // Initialization code here.
     }
@@ -154,9 +163,7 @@ const GLfloat vertexPositions[] = {
 - (void)drawRect:(NSRect)dirtyRect
 {
     [[self openGLContext] makeCurrentContext];
-    
-    [self resizeGL];
-    
+      
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     

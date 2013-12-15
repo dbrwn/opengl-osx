@@ -18,6 +18,8 @@
 		556F3209185A1AAA00DF4CA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556F3207185A1AAA00DF4CA7 /* InfoPlist.strings */; };
 		556F320C185A1AC100DF4CA7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 556F320A185A1AC100DF4CA7 /* Credits.rtf */; };
 		556F320F185A1AD500DF4CA7 /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F320D185A1AD500DF4CA7 /* TutorialApp.xib */; };
+		55E72AAA185D710700D9046B /* VertexPosition.fs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AA6185D6FAA00D9046B /* VertexPosition.fs */; };
+		55E72AAB185D710B00D9046B /* VertexPosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AA8185D6FB300D9046B /* VertexPosition.vs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		556F3208185A1AAA00DF4CA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Tutorial/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		556F320B185A1AC100DF4CA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Tutorial/en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
 		556F320E185A1AD500DF4CA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Tutorial/en.lproj/TutorialApp.xib; sourceTree = SOURCE_ROOT; };
+		55E72AA6185D6FAA00D9046B /* VertexPosition.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = VertexPosition.fs; path = Tutorial/VertexPosition.fs; sourceTree = SOURCE_ROOT; };
+		55E72AA8185D6FB300D9046B /* VertexPosition.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = VertexPosition.vs; path = Tutorial/VertexPosition.vs; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,6 @@
 				55299B261859725600546541 /* Shaders */,
 				55299AF21859658900546541 /* Supporting Files */,
 			);
-			name = Tutorial2;
 			path = Tutorial2;
 			sourceTree = "<group>";
 		};
@@ -124,7 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				55299B271859728700546541 /* FragPosition.fs */,
+				55E72AA6185D6FAA00D9046B /* VertexPosition.fs */,
 				55299B281859728700546541 /* FragPosition.vs */,
+				55E72AA8185D6FB300D9046B /* VertexPosition.vs */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -182,6 +187,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E72AAB185D710B00D9046B /* VertexPosition.vs in Resources */,
+				55E72AAA185D710700D9046B /* VertexPosition.fs in Resources */,
 				551B876618599AF60074DFBD /* FragPosition.vs in Resources */,
 				556F320C185A1AC100DF4CA7 /* Credits.rtf in Resources */,
 				55299B2B185972A700546541 /* FragPosition.fs in Resources */,

@@ -55,7 +55,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="149"/>
-                            <menuItem title="Quit NewApplication" keyEquivalent="q" id="136">
+                            <menuItem title="Quit TutorialApp" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-2" id="448"/>
                                 </connections>
