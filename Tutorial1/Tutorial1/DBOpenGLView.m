@@ -107,7 +107,7 @@ const GLfloat vertexPositions[] = {
 
 
 // this method resizes the OpenGL viewport to match this view's bounds when needed
-- (void) resizeGL
+- (void) reshape
 {
     if( (viewHeight != self.bounds.size.height) || (viewWidth != self.bounds.size.width) ) {
         
@@ -158,8 +158,6 @@ const GLfloat vertexPositions[] = {
 - (void)drawRect:(NSRect)dirtyRect
 {
     [[self openGLContext] makeCurrentContext];
-    
-    [self resizeGL];
     
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     glClear(GL_COLOR_BUFFER_BIT);
