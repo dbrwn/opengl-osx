@@ -16,9 +16,21 @@
 		5503E6AE185E886700B2A001 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AD9185D802800D9046B /* InfoPlist.strings */; };
 		5503E6AF185E886700B2A001 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AE8185D802800D9046B /* Images.xcassets */; };
 		5503E6B0185E886700B2A001 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55E72ADF185D802800D9046B /* Credits.rtf */; };
-		5503E6B6185E889300B2A001 /* DBOpenGLView_AllGPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503E6A0185E884A00B2A001 /* DBOpenGLView_AllGPU.m */; };
 		5503E6BD185E8B1200B2A001 /* VertexTimePosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 5503E6B7185E894F00B2A001 /* VertexTimePosition.vs */; };
 		5503E6BE185E8B1500B2A001 /* VertexTimePosition.fs in Resources */ = {isa = PBXBuildFile; fileRef = 5503E6B9185E898F00B2A001 /* VertexTimePosition.fs */; };
+		5503E6C1185EDD0300B2A001 /* DBOpenGLView_AllGPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503E6A0185E884A00B2A001 /* DBOpenGLView_AllGPU.m */; };
+		5503E6C7185EDD1B00B2A001 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72AD0185D802800D9046B /* Cocoa.framework */; };
+		5503E6F4185EDD5600B2A001 /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72AE3185D802800D9046B /* DBAppDelegate.m */; };
+		5503E6F5185EDD5F00B2A001 /* DBOpenGLView_AllGPU_Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503E6C0185EDC5500B2A001 /* DBOpenGLView_AllGPU_Color.m */; };
+		5503E6F6185EDD6200B2A001 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AE8185D802800D9046B /* Images.xcassets */; };
+		5503E6F7185EDD6600B2A001 /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E72B16185D830E00D9046B /* TutorialApp.xib */; };
+		5503E6F8185EDD9A00B2A001 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55E72AD9185D802800D9046B /* InfoPlist.strings */; };
+		5503E6F9185EDD9D00B2A001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72ADC185D802800D9046B /* main.m */; };
+		5503E6FA185EDDA100B2A001 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55E72ADF185D802800D9046B /* Credits.rtf */; };
+		5503E6FB185EDDAE00B2A001 /* VertexTimeColor.fs in Resources */ = {isa = PBXBuildFile; fileRef = 5503E6BF185EDC1B00B2A001 /* VertexTimeColor.fs */; };
+		5503E6FC185EDDB100B2A001 /* VertexTimePosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 5503E6B7185E894F00B2A001 /* VertexTimePosition.vs */; };
+		5503E6FD185EDDC100B2A001 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72B04185D806F00D9046B /* OpenGL.framework */; };
+		5503E6FE185EDDC700B2A001 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E72B1A185D85B300D9046B /* QuartzCore.framework */; };
 		552C5C69185E2D37009D84FD /* DBOpenGLView_CPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72B07185D80B800D9046B /* DBOpenGLView_CPU.m */; };
 		552C5C6D185E6FDC009D84FD /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72AE3185D802800D9046B /* DBAppDelegate.m */; };
 		552C5C6F185E6FDC009D84FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E72ADC185D802800D9046B /* main.m */; };
@@ -50,6 +62,9 @@
 		5503E6B4185E886700B2A001 /* Tutorial3_AllGPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3_AllGPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5503E6B7185E894F00B2A001 /* VertexTimePosition.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertexTimePosition.vs; sourceTree = "<group>"; };
 		5503E6B9185E898F00B2A001 /* VertexTimePosition.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertexTimePosition.fs; sourceTree = "<group>"; };
+		5503E6BF185EDC1B00B2A001 /* VertexTimeColor.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = VertexTimeColor.fs; sourceTree = "<group>"; };
+		5503E6C0185EDC5500B2A001 /* DBOpenGLView_AllGPU_Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_AllGPU_Color.m; sourceTree = "<group>"; };
+		5503E6C6185EDD1B00B2A001 /* Tutorial3_AllGPU_Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3_AllGPU_Color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		552C5C67185E2C15009D84FD /* DBOpenGLView_GPU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_GPU.m; sourceTree = "<group>"; };
 		552C5C6A185E6FCC009D84FD /* VertexOffsetPosition.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = VertexOffsetPosition.vs; sourceTree = "<group>"; };
 		552C5C7E185E6FDC009D84FD /* Tutorial3_GPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3_GPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +100,16 @@
 				5503E6A7185E886700B2A001 /* QuartzCore.framework in Frameworks */,
 				5503E6A8185E886700B2A001 /* OpenGL.framework in Frameworks */,
 				5503E6A9185E886700B2A001 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5503E6C3185EDD1B00B2A001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5503E6FE185EDDC700B2A001 /* QuartzCore.framework in Frameworks */,
+				5503E6FD185EDDC100B2A001 /* OpenGL.framework in Frameworks */,
+				5503E6C7185EDD1B00B2A001 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +151,7 @@
 				55E72ACD185D802800D9046B /* Tutorial3_CPU.app */,
 				552C5C7E185E6FDC009D84FD /* Tutorial3_GPU.app */,
 				5503E6B4185E886700B2A001 /* Tutorial3_AllGPU.app */,
+				5503E6C6185EDD1B00B2A001 /* Tutorial3_AllGPU_Color.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +186,7 @@
 				55E72B07185D80B800D9046B /* DBOpenGLView_CPU.m */,
 				552C5C67185E2C15009D84FD /* DBOpenGLView_GPU.m */,
 				5503E6A0185E884A00B2A001 /* DBOpenGLView_AllGPU.m */,
+				5503E6C0185EDC5500B2A001 /* DBOpenGLView_AllGPU_Color.m */,
 				55E72AE8185D802800D9046B /* Images.xcassets */,
 				55E72B16185D830E00D9046B /* TutorialApp.xib */,
 				55E72B0F185D82CB00D9046B /* Shaders */,
@@ -190,6 +217,7 @@
 				552C5C83185E7452009D84FD /* VertexOffsetPosition.fs */,
 				5503E6B7185E894F00B2A001 /* VertexTimePosition.vs */,
 				5503E6B9185E898F00B2A001 /* VertexTimePosition.fs */,
+				5503E6BF185EDC1B00B2A001 /* VertexTimeColor.fs */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -212,6 +240,23 @@
 			name = Tutorial3_AllGPU;
 			productName = Tutorial3;
 			productReference = 5503E6B4185E886700B2A001 /* Tutorial3_AllGPU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5503E6C5185EDD1B00B2A001 /* Tutorial3_AllGPU_Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5503E6EE185EDD1C00B2A001 /* Build configuration list for PBXNativeTarget "Tutorial3_AllGPU_Color" */;
+			buildPhases = (
+				5503E6C2185EDD1B00B2A001 /* Sources */,
+				5503E6C3185EDD1B00B2A001 /* Frameworks */,
+				5503E6C4185EDD1B00B2A001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial3_AllGPU_Color;
+			productName = Tutorial3_AllGPU_Color;
+			productReference = 5503E6C6185EDD1B00B2A001 /* Tutorial3_AllGPU_Color.app */;
 			productType = "com.apple.product-type.application";
 		};
 		552C5C6B185E6FDC009D84FD /* Tutorial3_GPU */ = {
@@ -274,6 +319,7 @@
 				55E72ACC185D802800D9046B /* Tutorial3_CPU */,
 				552C5C6B185E6FDC009D84FD /* Tutorial3_GPU */,
 				5503E6A1185E886700B2A001 /* Tutorial3_AllGPU */,
+				5503E6C5185EDD1B00B2A001 /* Tutorial3_AllGPU_Color */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +335,19 @@
 				5503E6AE185E886700B2A001 /* InfoPlist.strings in Resources */,
 				5503E6AF185E886700B2A001 /* Images.xcassets in Resources */,
 				5503E6B0185E886700B2A001 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5503E6C4185EDD1B00B2A001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5503E6FC185EDDB100B2A001 /* VertexTimePosition.vs in Resources */,
+				5503E6FB185EDDAE00B2A001 /* VertexTimeColor.fs in Resources */,
+				5503E6F6185EDD6200B2A001 /* Images.xcassets in Resources */,
+				5503E6F8185EDD9A00B2A001 /* InfoPlist.strings in Resources */,
+				5503E6F7185EDD6600B2A001 /* TutorialApp.xib in Resources */,
+				5503E6FA185EDDA100B2A001 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +384,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5503E6C1185EDD0300B2A001 /* DBOpenGLView_AllGPU.m in Sources */,
 				5503E6A3185E886700B2A001 /* DBAppDelegate.m in Sources */,
-				5503E6B6185E889300B2A001 /* DBOpenGLView_AllGPU.m in Sources */,
 				5503E6A5185E886700B2A001 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5503E6C2185EDD1B00B2A001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5503E6F5185EDD5F00B2A001 /* DBOpenGLView_AllGPU_Color.m in Sources */,
+				5503E6F9185EDD9D00B2A001 /* main.m in Sources */,
+				5503E6F4185EDD5600B2A001 /* DBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +472,36 @@
 				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial3/Tutorial3_GPU-Info.plist";
 				PRODUCT_NAME = Tutorial3_AllGPU;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5503E6EF185EDD1C00B2A001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial3/Tutorial3_GPU-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5503E6F0185EDD1C00B2A001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial3/Tutorial3_GPU-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -538,6 +637,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5503E6EE185EDD1C00B2A001 /* Build configuration list for PBXNativeTarget "Tutorial3_AllGPU_Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5503E6EF185EDD1C00B2A001 /* Debug */,
+				5503E6F0185EDD1C00B2A001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		552C5C7B185E6FDC009D84FD /* Build configuration list for PBXNativeTarget "Tutorial3_GPU" */ = {
 			isa = XCConfigurationList;
