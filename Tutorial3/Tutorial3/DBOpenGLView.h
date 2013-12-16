@@ -27,6 +27,9 @@
     // stores the location of the offset vector
     GLuint offsetLocation;
     
+    // stores the location of the time value
+    GLuint timeLocation;
+    
     // reference to the display link resource
     CVDisplayLinkRef displayLink;
     
