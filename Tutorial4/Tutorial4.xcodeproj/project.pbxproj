@@ -15,7 +15,6 @@
 		5561798C18613DB5007ED9D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9B518612B3A0096B370 /* InfoPlist.strings */; };
 		5561798D18613DB7007ED9D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A0E9B818612B3A0096B370 /* main.m */; };
 		5561798E18613DBB007ED9D1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9E018612C340096B370 /* Credits.rtf */; };
-		5561798F18613DEB007ED9D1 /* DBOpenGLView_ManPer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5561798618613D99007ED9D1 /* DBOpenGLView_ManPer.m */; };
 		5561799218613F2A007ED9D1 /* manualPerspective.vs in Resources */ = {isa = PBXBuildFile; fileRef = 5561799018613EE7007ED9D1 /* manualPerspective.vs */; };
 		5561799318613F2F007ED9D1 /* vertexColor.fs in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9E418612C950096B370 /* vertexColor.fs */; };
 		5561799418613F6E007ED9D1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0E9F418612D7E0096B370 /* OpenGL.framework */; };
@@ -31,6 +30,20 @@
 		55A0E9F318612D630096B370 /* offsetPosition.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9E518612C950096B370 /* offsetPosition.vs */; };
 		55A0E9F518612D7E0096B370 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0E9F418612D7E0096B370 /* OpenGL.framework */; };
 		55A0E9F718612D850096B370 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0E9F618612D850096B370 /* QuartzCore.framework */; };
+		55DAC8D01861598300500BAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A0E9B818612B3A0096B370 /* main.m */; };
+		55DAC8D11861598300500BAF /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A0E9BF18612B3A0096B370 /* DBAppDelegate.m */; };
+		55DAC8D31861598300500BAF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0E9F618612D850096B370 /* QuartzCore.framework */; };
+		55DAC8D41861598300500BAF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0E9F418612D7E0096B370 /* OpenGL.framework */; };
+		55DAC8D51861598300500BAF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0E9AC18612B3A0096B370 /* Cocoa.framework */; };
+		55DAC8D71861598300500BAF /* vertexColor.fs in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9E418612C950096B370 /* vertexColor.fs */; };
+		55DAC8D91861598300500BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9C418612B3A0096B370 /* Images.xcassets */; };
+		55DAC8DA1861598300500BAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9B518612B3A0096B370 /* InfoPlist.strings */; };
+		55DAC8DB1861598300500BAF /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9F118612D070096B370 /* TutorialApp.xib */; };
+		55DAC8DC1861598300500BAF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9E018612C340096B370 /* Credits.rtf */; };
+		55DAC8E31861599B00500BAF /* matrixPerspective.vs in Sources */ = {isa = PBXBuildFile; fileRef = 55DAC8E21861599B00500BAF /* matrixPerspective.vs */; };
+		55DAC8E4186159D000500BAF /* matrixPerspective.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55DAC8E21861599B00500BAF /* matrixPerspective.vs */; };
+		55DAC8E6186159E100500BAF /* DBOpenGLView_Matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DAC8E5186159E100500BAF /* DBOpenGLView_Matrix.m */; };
+		55DAC8E718615A1500500BAF /* DBOpenGLView_ManPer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5561798618613D99007ED9D1 /* DBOpenGLView_ManPer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +70,9 @@
 		55A0E9F018612D070096B370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TutorialApp.xib; sourceTree = "<group>"; };
 		55A0E9F418612D7E0096B370 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		55A0E9F618612D850096B370 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		55DAC8E01861598300500BAF /* Tutorial4_Matrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial4_Matrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DAC8E21861599B00500BAF /* matrixPerspective.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = matrixPerspective.vs; sourceTree = "<group>"; };
+		55DAC8E5186159E100500BAF /* DBOpenGLView_Matrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_Matrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55DAC8D21861598300500BAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DAC8D31861598300500BAF /* QuartzCore.framework in Frameworks */,
+				55DAC8D41861598300500BAF /* OpenGL.framework in Frameworks */,
+				55DAC8D51861598300500BAF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +123,7 @@
 			children = (
 				55A0E9A918612B3A0096B370 /* Tutorial4.app */,
 				5561795718613D54007ED9D1 /* Tutorial4_ManPer.app */,
+				55DAC8E01861598300500BAF /* Tutorial4_Matrix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +157,7 @@
 				55A0E9E818612CBA0096B370 /* DBOpenGLView.h */,
 				55A0E9E918612CBA0096B370 /* DBOpenGLView_Ortho.m */,
 				5561798618613D99007ED9D1 /* DBOpenGLView_ManPer.m */,
+				55DAC8E5186159E100500BAF /* DBOpenGLView_Matrix.m */,
 				55A0E9C418612B3A0096B370 /* Images.xcassets */,
 				55A0E9F118612D070096B370 /* TutorialApp.xib */,
 				55A0E9E318612C820096B370 /* Shaders */,
@@ -156,6 +184,7 @@
 				55A0E9E418612C950096B370 /* vertexColor.fs */,
 				55A0E9E518612C950096B370 /* offsetPosition.vs */,
 				5561799018613EE7007ED9D1 /* manualPerspective.vs */,
+				55DAC8E21861599B00500BAF /* matrixPerspective.vs */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -197,6 +226,23 @@
 			productReference = 55A0E9A918612B3A0096B370 /* Tutorial4.app */;
 			productType = "com.apple.product-type.application";
 		};
+		55DAC8CD1861598300500BAF /* Tutorial4_Matrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55DAC8DD1861598300500BAF /* Build configuration list for PBXNativeTarget "Tutorial4_Matrix" */;
+			buildPhases = (
+				55DAC8CE1861598300500BAF /* Sources */,
+				55DAC8D21861598300500BAF /* Frameworks */,
+				55DAC8D61861598300500BAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial4_Matrix;
+			productName = Tutorial4_ManPer;
+			productReference = 55DAC8E01861598300500BAF /* Tutorial4_Matrix.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +268,7 @@
 			targets = (
 				55A0E9A818612B3A0096B370 /* Tutorial4_Ortho */,
 				5561795618613D54007ED9D1 /* Tutorial4_ManPer */,
+				55DAC8CD1861598300500BAF /* Tutorial4_Matrix */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +300,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55DAC8D61861598300500BAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DAC8E4186159D000500BAF /* matrixPerspective.vs in Resources */,
+				55DAC8D71861598300500BAF /* vertexColor.fs in Resources */,
+				55DAC8D91861598300500BAF /* Images.xcassets in Resources */,
+				55DAC8DA1861598300500BAF /* InfoPlist.strings in Resources */,
+				55DAC8DB1861598300500BAF /* TutorialApp.xib in Resources */,
+				55DAC8DC1861598300500BAF /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5561798F18613DEB007ED9D1 /* DBOpenGLView_ManPer.m in Sources */,
+				55DAC8E718615A1500500BAF /* DBOpenGLView_ManPer.m in Sources */,
 				5561798D18613DB7007ED9D1 /* main.m in Sources */,
 				5561798518613D8C007ED9D1 /* DBAppDelegate.m in Sources */,
 			);
@@ -272,7 +332,18 @@
 			files = (
 				5561798918613DA0007ED9D1 /* DBOpenGLView_Ortho.m in Sources */,
 				55A0E9C018612B3A0096B370 /* DBAppDelegate.m in Sources */,
+				55DAC8E31861599B00500BAF /* matrixPerspective.vs in Sources */,
 				55A0E9B918612B3A0096B370 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55DAC8CE1861598300500BAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DAC8D01861598300500BAF /* main.m in Sources */,
+				55DAC8E6186159E100500BAF /* DBOpenGLView_Matrix.m in Sources */,
+				55DAC8D11861598300500BAF /* DBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +501,36 @@
 			};
 			name = Release;
 		};
+		55DAC8DE1861598300500BAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial4/Tutorial4-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial4/Tutorial4-Info.plist";
+				PRODUCT_NAME = Tutorial4_Matrix;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55DAC8DF1861598300500BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial4/Tutorial4-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial4/Tutorial4-Info.plist";
+				PRODUCT_NAME = Tutorial4_Matrix;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,6 +557,15 @@
 			buildConfigurations = (
 				55A0E9DB18612B3A0096B370 /* Debug */,
 				55A0E9DC18612B3A0096B370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55DAC8DD1861598300500BAF /* Build configuration list for PBXNativeTarget "Tutorial4_Matrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55DAC8DE1861598300500BAF /* Debug */,
+				55DAC8DF1861598300500BAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
