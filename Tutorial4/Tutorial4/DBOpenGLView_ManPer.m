@@ -68,7 +68,7 @@
 {
     GLuint shader1, shader2;
 
-    shader1 = [self makeShaderOfType:GL_VERTEX_SHADER withShaderResource:@"offsetPosition"];
+    shader1 = [self makeShaderOfType:GL_VERTEX_SHADER withShaderResource:@"manualPerspective"];
     shader2 = [self makeShaderOfType:GL_FRAGMENT_SHADER withShaderResource:@"vertexColor"];
     
     shaderProgram = glCreateProgram();
@@ -226,6 +226,7 @@ const GLfloat vertexPositions[] = {
     glDrawArrays(GL_TRIANGLES, 0, triangleCt);
     
     glDisableVertexAttribArray(0);
+    glDisableVertexAttribArray(1);
     glUseProgram(0);
 
     glFlush();
@@ -311,11 +312,19 @@ const GLfloat vertexPositions[] = {
     
     [self initializeShaders];
     
+    GLuint offsetLocation = glGetUniformLocation(shaderProgram, "offset");
+    
+    GLuint frustumScaleLocation = glGetUniformLocation(shaderProgram, "frustumScale");
+    GLuint zNearLocation = glGetUniformLocation(shaderProgram, "zNear");
+    GLuint zFarLocation = glGetUniformLocation(shaderProgram, "zFar");
+    
     glUseProgram(shaderProgram);
     
-    GLuint offsetLocation = glGetUniformLocation(shaderProgram, "offset");
-    glUniform3f(offsetLocation, 0.5f, 0.25f, 0.0f);
-    
+    glUniform3f(offsetLocation, 0.5f, 0.5f, -2.0f);
+    glUniform1f(frustumScaleLocation, 1.0f);
+    glUniform1f(zNearLocation, 1.0f);
+    glUniform1f(zFarLocation, 3.0f);
+
     glUseProgram(0);
     
     // log some information about the OpenGL session we've started.
