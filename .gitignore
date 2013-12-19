@@ -11,6 +11,7 @@
 !default.perspectivev3
 xcuserdata
 project.xcworkspace
+*.pbxproj
 profile
 *.moved-aside
 DerivedData

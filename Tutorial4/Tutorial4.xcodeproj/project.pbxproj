@@ -40,7 +40,6 @@
 		55DAC8DA1861598300500BAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9B518612B3A0096B370 /* InfoPlist.strings */; };
 		55DAC8DB1861598300500BAF /* TutorialApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9F118612D070096B370 /* TutorialApp.xib */; };
 		55DAC8DC1861598300500BAF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55A0E9E018612C340096B370 /* Credits.rtf */; };
-		55DAC8E31861599B00500BAF /* matrixPerspective.vs in Sources */ = {isa = PBXBuildFile; fileRef = 55DAC8E21861599B00500BAF /* matrixPerspective.vs */; };
 		55DAC8E4186159D000500BAF /* matrixPerspective.vs in Resources */ = {isa = PBXBuildFile; fileRef = 55DAC8E21861599B00500BAF /* matrixPerspective.vs */; };
 		55DAC8E6186159E100500BAF /* DBOpenGLView_Matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DAC8E5186159E100500BAF /* DBOpenGLView_Matrix.m */; };
 		55DAC8E718615A1500500BAF /* DBOpenGLView_ManPer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5561798618613D99007ED9D1 /* DBOpenGLView_ManPer.m */; };
@@ -50,7 +49,7 @@
 		5561795718613D54007ED9D1 /* Tutorial4_ManPer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial4_ManPer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5561798618613D99007ED9D1 /* DBOpenGLView_ManPer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_ManPer.m; sourceTree = "<group>"; };
 		5561799018613EE7007ED9D1 /* manualPerspective.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = manualPerspective.vs; sourceTree = "<group>"; };
-		55A0E9A918612B3A0096B370 /* Tutorial4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Tutorial4.app; path = Tutorial4_Ortho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A0E9A918612B3A0096B370 /* Tutorial4_Ortho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial4_Ortho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A0E9AC18612B3A0096B370 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		55A0E9AF18612B3A0096B370 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		55A0E9B018612B3A0096B370 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -121,7 +120,7 @@
 		55A0E9AA18612B3A0096B370 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55A0E9A918612B3A0096B370 /* Tutorial4.app */,
+				55A0E9A918612B3A0096B370 /* Tutorial4_Ortho.app */,
 				5561795718613D54007ED9D1 /* Tutorial4_ManPer.app */,
 				55DAC8E01861598300500BAF /* Tutorial4_Matrix.app */,
 			);
@@ -223,7 +222,7 @@
 			);
 			name = Tutorial4_Ortho;
 			productName = Tutorial4;
-			productReference = 55A0E9A918612B3A0096B370 /* Tutorial4.app */;
+			productReference = 55A0E9A918612B3A0096B370 /* Tutorial4_Ortho.app */;
 			productType = "com.apple.product-type.application";
 		};
 		55DAC8CD1861598300500BAF /* Tutorial4_Matrix */ = {
@@ -332,7 +331,6 @@
 			files = (
 				5561798918613DA0007ED9D1 /* DBOpenGLView_Ortho.m in Sources */,
 				55A0E9C018612B3A0096B370 /* DBAppDelegate.m in Sources */,
-				55DAC8E31861599B00500BAF /* matrixPerspective.vs in Sources */,
 				55A0E9B918612B3A0096B370 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
