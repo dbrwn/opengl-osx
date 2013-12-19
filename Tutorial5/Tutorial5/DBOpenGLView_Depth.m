@@ -291,7 +291,8 @@ const GLshort indexData[] =
     [[self openGLContext] makeCurrentContext];
     
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClearDepth(1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     glUseProgram(shaderProgram);
     
@@ -302,6 +303,7 @@ const GLshort indexData[] =
     glDrawElements(GL_TRIANGLES, sizeof(indexData)/sizeof(GLshort), GL_UNSIGNED_SHORT, 0);
 
     glBindVertexArray(vaObject2);
+    // to show various stages of overlap, modify z component of offset between -1 and 0.0
     glUniform3f(offsetUniform, 0.0f, 0.0f, -1.0f);
     glDrawElements(GL_TRIANGLES, sizeof(indexData)/sizeof(GLshort), GL_UNSIGNED_SHORT, 0);
     
@@ -408,6 +410,11 @@ const GLshort indexData[] =
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
     glFrontFace(GL_CW);
+    
+    glEnable(GL_DEPTH_TEST);
+    glDepthMask(GL_TRUE);
+    glDepthFunc(GL_LEQUAL);
+    glDepthRange(0.0f, 1.0f);
     
     [self initializeShaders];
     
