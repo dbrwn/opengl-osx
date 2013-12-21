@@ -419,7 +419,17 @@ const GLshort indexData[] =
 
 GLKMatrix4 stationaryOffset(GLfloat renderTime)
 {
-    return (GLKMatrix4MakeTranslation(0.0f, 0.0f, -15.0f));
+    const GLfloat floopDuration = 4.0f;
+    const GLfloat fScale = M_PI * 2.0 / floopDuration;
+    
+    GLfloat currentTimeOffset = fmodf(renderTime,floopDuration) + floopDuration / 2.0;
+
+    return ( GLKMatrix4Scale(GLKMatrix4MakeTranslation(0.0f, 0.0f, -15.0f),
+                             sinf(currentTimeOffset * fScale) + 2.0f,
+                             sinf(currentTimeOffset * fScale) + 2.0f,
+                             1.0f) );
+    
+//    return ( GLKMatrix4MakeTranslation( 0.0f, 0.0f, -15.0f ) );
 }
 
 
