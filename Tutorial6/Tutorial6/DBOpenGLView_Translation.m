@@ -424,6 +424,7 @@ GLKMatrix4 stationaryOffset(GLfloat renderTime)
     
     GLfloat currentTimeOffset = fmodf(renderTime,floopDuration) + floopDuration / 2.0;
 
+    // makes a scaled-over-time version of the translation matrix
     return ( GLKMatrix4Scale(GLKMatrix4MakeTranslation(0.0f, 0.0f, -15.0f),
                              sinf(currentTimeOffset * fScale) + 2.0f,
                              sinf(currentTimeOffset * fScale) + 2.0f,
@@ -458,7 +459,7 @@ GLKMatrix4 bottomCircleOffset(GLfloat renderTime)
                                       sinf(currentTimeOffset * fScale) * 5.0f - 15.0f));
 }
 
-// set up an array of
+// set up an array of offset functions
 typedef GLKMatrix4 (*offsetFunction_t)(const GLfloat renderTime);
 
 offsetFunction_t objectPath[3] = {
