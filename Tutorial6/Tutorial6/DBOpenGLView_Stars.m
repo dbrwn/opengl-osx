@@ -232,6 +232,7 @@ const GLshort indexData[] =
     GLuint modelOffsetUniform = glGetUniformLocation(shaderProgram, "modelToCameraMatrix");
     GLuint objectId = 0;
     
+    // draw the same vertex set multiple times, but apply a different translation matrix to each
     for( objectId = 0; objectId < 3; objectId++ ) {
         
         GLKMatrix4 translationMatrix = (*objectPath[objectId])(renderTime);
@@ -239,7 +240,6 @@ const GLshort indexData[] =
         glBindVertexArray(vaObject);
         glUniformMatrix4fv(modelOffsetUniform, 1, GL_FALSE, (GLfloat *)&translationMatrix);
         glDrawElements(GL_TRIANGLES, sizeof(indexData)/sizeof(GLshort), GL_UNSIGNED_SHORT, 0);
-        
         
     }
 
@@ -417,47 +417,87 @@ const GLshort indexData[] =
 
 #pragma mark motion path calculation functions
 
+// this function has a static translation but scales and rotates according to the
+// current time offset
 GLKMatrix4 stationaryOffset(GLfloat renderTime)
 {
-    const GLfloat floopDuration = 4.0f;
+    const GLfloat floopDuration = 6.0f;
     const GLfloat fScale = M_PI * 2.0 / floopDuration;
     
     GLfloat currentTimeOffset = fmodf(renderTime,floopDuration) + floopDuration / 2.0;
-
-    // makes a scaled-over-time version of the translation matrix
-    return ( GLKMatrix4Scale(GLKMatrix4MakeTranslation(0.0f, 0.0f, -15.0f),
-                             sinf(currentTimeOffset * fScale) + 2.0f,
-                             sinf(currentTimeOffset * fScale) + 2.0f,
-                             1.0f) );
     
-//    return ( GLKMatrix4MakeTranslation( 0.0f, 0.0f, -15.0f ) );
+    // translation only in z
+    GLKMatrix4 translationMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -15.0f);
+    
+    // scaling bounces between +1.0f and +3.0f, same scale factor for all three axes
+    // maintain this shape's aspect ratio
+    GLKMatrix4 scaleMatrix = GLKMatrix4Scale(translationMatrix,
+                                             sinf(currentTimeOffset * fScale) + 2.0f,
+                                             sinf(currentTimeOffset * fScale) + 2.0f,
+                                             sinf(currentTimeOffset * fScale) + 2.0f);
+    
+    // rotation is fast (loop duration is the smallest) and the rotation axis moves around
+    // periodically
+    GLKMatrix4 rotationMatrix = GLKMatrix4Rotate(scaleMatrix, 5.0f * currentTimeOffset * fScale,
+                                                 sinf(currentTimeOffset * fScale ),
+                                                 sinf(currentTimeOffset * fScale + 2.0f * M_PI / 3),
+                                                 sinf(currentTimeOffset * fScale + 4.0f * M_PI / 3));
+    
+    // return translationMatrix or scaleMatrix to only see translation or
+    // translation plus scaling
+    return ( rotationMatrix );
 }
 
-
+// this function has dynamic translation and rotation but static scaling
 GLKMatrix4 ovalOffset(GLfloat renderTime)
 {
-    const GLfloat floopDuration = 3.0f;
+    const GLfloat floopDuration = 9.0f;
     const GLfloat fScale = M_PI * 2.0 / floopDuration;
     
     GLfloat currentTimeOffset = fmodf(renderTime,floopDuration);
     
-    return (GLKMatrix4MakeTranslation(cosf(currentTimeOffset * fScale) * 4.0f,
-                                      sinf(currentTimeOffset * fScale) * 6.0f,
-                                      -15.0f));
+    // set up translation to move in the x-y plane (constant z)
+    GLKMatrix4 translationMatrix = GLKMatrix4MakeTranslation(cosf(currentTimeOffset * fScale) * 6.0f,
+                                                             sinf(currentTimeOffset * fScale) * 8.0f,
+                                                             -15.0f);
+    
+    // static scaling to reduce shape size
+    GLKMatrix4 scaleMatrix = GLKMatrix4Scale(translationMatrix, 0.75f, 0.75f, 0.75f);
+    
+    // rotation is slower (loop duration is medium) and rotation axis is static
+    GLKMatrix4 rotationMatrix = GLKMatrix4Rotate(scaleMatrix, 5.0f * currentTimeOffset * fScale,
+                                                 1.0f, 1.0f, 1.0f);
+    
+    // return translationMatrix or scaleMatrix to only see translation or
+    // translation plus scaling
+    return (rotationMatrix);
 }
 
+// this function has dynamic translation and rotation but static scaling
 GLKMatrix4 bottomCircleOffset(GLfloat renderTime)
-
 {
     const float fLoopDuration = 12.0f;
     const GLfloat fScale = M_PI * 2.0 / fLoopDuration;
     
     GLfloat currentTimeOffset = fmodf(renderTime, fLoopDuration);
     
-    return (GLKMatrix4MakeTranslation(cosf(currentTimeOffset * fScale) * 5.0f,
-                                       -3.5f,
-                                      sinf(currentTimeOffset * fScale) * 5.0f - 15.0f));
+    // set up translation to move in the x-z plane (constant y)
+    GLKMatrix4 translationMatrix = GLKMatrix4MakeTranslation(cosf(currentTimeOffset * fScale) * 5.0f,
+                                                             -3.5f,
+                                                             sinf(currentTimeOffset * fScale) * 5.0f - 15.0f);
+    
+    // static scaling to reduce shape size
+    GLKMatrix4 scaleMatrix = GLKMatrix4Scale(translationMatrix, 1.25f, 1.25f, 1.25f);
+    
+    // rotation is slowest (loop duration is largest) and rotation axis is static
+    GLKMatrix4 rotationMatrix = GLKMatrix4Rotate(scaleMatrix, 5.0f * currentTimeOffset * fScale,
+                                                 -1.0f, 1.0f, -1.0f);
+    
+    // return translationMatrix or scaleMatrix to only see translation or
+    // translation plus scaling
+    return (rotationMatrix);
 }
+
 
 // set up an array of offset functions
 typedef GLKMatrix4 (*offsetFunction_t)(const GLfloat renderTime);

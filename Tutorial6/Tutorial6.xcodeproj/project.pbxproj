@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55DAC8EE1862CA5F00500BAF /* DBOpenGLView_Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DAC8E91862CA4B00500BAF /* DBOpenGLView_Translation.m */; };
+		55DAC8EE1862CA5F00500BAF /* DBOpenGLView_Stars.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DAC8E91862CA4B00500BAF /* DBOpenGLView_Stars.m */; };
 		55DAC8EF1862CA5F00500BAF /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A0E9BF18612B3A0096B370 /* DBAppDelegate.m */; };
 		55DAC8F01862CA5F00500BAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A0E9B818612B3A0096B370 /* main.m */; };
 		55DAC8F21862CA5F00500BAF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0E9F618612D850096B370 /* QuartzCore.framework */; };
@@ -41,8 +41,8 @@
 		55A0E9F418612D7E0096B370 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		55A0E9F618612D850096B370 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		55DAC8E21861599B00500BAF /* localTransform.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = localTransform.vs; sourceTree = "<group>"; };
-		55DAC8E91862CA4B00500BAF /* DBOpenGLView_Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_Translation.m; sourceTree = "<group>"; };
-		55DAC8FF1862CA5F00500BAF /* Tutorial6_Translation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial6_Translation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DAC8E91862CA4B00500BAF /* DBOpenGLView_Stars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLView_Stars.m; sourceTree = "<group>"; };
+		55DAC8FF1862CA5F00500BAF /* Tutorial6_Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial6_Stars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DAC901186530B400500BAF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -73,7 +73,7 @@
 		55A0E9AA18612B3A0096B370 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55DAC8FF1862CA5F00500BAF /* Tutorial6_Translation.app */,
+				55DAC8FF1862CA5F00500BAF /* Tutorial6_Stars.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 				55A0E9BE18612B3A0096B370 /* DBAppDelegate.h */,
 				55A0E9BF18612B3A0096B370 /* DBAppDelegate.m */,
 				55A0E9E818612CBA0096B370 /* DBOpenGLView.h */,
-				55DAC8E91862CA4B00500BAF /* DBOpenGLView_Translation.m */,
+				55DAC8E91862CA4B00500BAF /* DBOpenGLView_Stars.m */,
 				55A0E9C418612B3A0096B370 /* Images.xcassets */,
 				55A0E9F118612D070096B370 /* TutorialApp.xib */,
 				55A0E9E318612C820096B370 /* Shaders */,
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		55DAC8EB1862CA5F00500BAF /* Tutorial6_Translation */ = {
+		55DAC8EB1862CA5F00500BAF /* Tutorial6_Stars */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55DAC8FC1862CA5F00500BAF /* Build configuration list for PBXNativeTarget "Tutorial6_Translation" */;
+			buildConfigurationList = 55DAC8FC1862CA5F00500BAF /* Build configuration list for PBXNativeTarget "Tutorial6_Stars" */;
 			buildPhases = (
 				55DAC8EC1862CA5F00500BAF /* Sources */,
 				55DAC8F11862CA5F00500BAF /* Frameworks */,
@@ -151,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = Tutorial6_Translation;
+			name = Tutorial6_Stars;
 			productName = Tutorial4;
-			productReference = 55DAC8FF1862CA5F00500BAF /* Tutorial6_Translation.app */;
+			productReference = 55DAC8FF1862CA5F00500BAF /* Tutorial6_Stars.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55DAC8EB1862CA5F00500BAF /* Tutorial6_Translation */,
+				55DAC8EB1862CA5F00500BAF /* Tutorial6_Stars */,
 			);
 		};
 /* End PBXProject section */
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DAC8EE1862CA5F00500BAF /* DBOpenGLView_Translation.m in Sources */,
+				55DAC8EE1862CA5F00500BAF /* DBOpenGLView_Stars.m in Sources */,
 				55DAC8EF1862CA5F00500BAF /* DBAppDelegate.m in Sources */,
 				55DAC8F01862CA5F00500BAF /* main.m in Sources */,
 			);
@@ -317,7 +317,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial6/Tutorial6-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial6/Tutorial6-Info.plist";
-				PRODUCT_NAME = Tutorial6_Translation;
+				PRODUCT_NAME = Tutorial6_Stars;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -330,7 +330,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial6/Tutorial6-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial6/Tutorial6-Info.plist";
-				PRODUCT_NAME = Tutorial6_Translation;
+				PRODUCT_NAME = Tutorial6_Stars;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -347,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55DAC8FC1862CA5F00500BAF /* Build configuration list for PBXNativeTarget "Tutorial6_Translation" */ = {
+		55DAC8FC1862CA5F00500BAF /* Build configuration list for PBXNativeTarget "Tutorial6_Stars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55DAC8FD1862CA5F00500BAF /* Debug */,
