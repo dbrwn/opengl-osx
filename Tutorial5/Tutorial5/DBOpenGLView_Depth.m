@@ -304,7 +304,7 @@ const GLshort indexData[] =
 
     glBindVertexArray(vaObject2);
     // to show various stages of overlap, modify z component of offset between -1 and 0.0
-    glUniform3f(offsetUniform, 0.0f, 0.0f, -1.0f);
+    glUniform3f(offsetUniform, 0.0f, 0.0f, -0.15f);
     glDrawElements(GL_TRIANGLES, sizeof(indexData)/sizeof(GLshort), GL_UNSIGNED_SHORT, 0);
     
     glBindVertexArray(0);
