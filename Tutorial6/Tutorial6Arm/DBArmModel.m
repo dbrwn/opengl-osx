@@ -241,7 +241,7 @@ const GLshort indexData[] =
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indexData), indexData, GL_STATIC_DRAW);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,0);
 
-    // vertex array object for first object (in first half of buffer data)
+    // vertex array object for our object (in first half of buffer data)
     glGenVertexArrays(1, &vaObject);
     
     glBindVertexArray(vaObject);
@@ -413,11 +413,13 @@ const GLshort indexData[] =
     CFRelease(modelStack);
 }
 
+// draw model at an already established base position
 - (void) drawModel
 {
     [self drawModelAtLocation:basePosition];
 }
 
+// draw the elements for the model with the matrix at the top of the supplied stack
 - (void) drawElementsWithMatrixStack:(GLKMatrixStackRef)matrixStack
 {
     GLKMatrix4 modelMatrix = GLKMatrixStackGetMatrix4(matrixStack);

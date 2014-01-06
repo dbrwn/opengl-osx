@@ -146,12 +146,7 @@ static CVReturn DBDisplayLinkCallback(CVDisplayLinkRef displayLink,
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     glUseProgram(shaderProgram);
-    
-    // TODO: What if we didn't update the frustum here?
-    // Right now the frustum only changes when the window resizes
-    GLKMatrix4 frustum = [self generateFrustumForSize:self.bounds.size];
-    glUniformMatrix4fv(cameraOffsetUniform, 1, GL_FALSE, (GLfloat *)&frustum);
-    
+       
     [_armModel drawModel];
 
     glUseProgram(0);
@@ -285,6 +280,8 @@ static CVReturn DBDisplayLinkCallback(CVDisplayLinkRef displayLink,
     
     glUseProgram(0);
     
+    // preparing the model object required the position and color attributes to be
+    // set up (see above)
     [_armModel prepareOpenGL];
     
     glEnable(GL_CULL_FACE);
