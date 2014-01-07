@@ -232,13 +232,13 @@ const GLshort indexData[] =
     GLuint modelOffsetUniform = glGetUniformLocation(shaderProgram, "modelToCameraMatrix");
     GLuint objectId = 0;
     
-    // draw the same vertex set multiple times, but apply a different translation matrix to each
+    // draw the same vertex set multiple times, but apply a different transformation matrix to each
     for( objectId = 0; objectId < 3; objectId++ ) {
         
-        GLKMatrix4 translationMatrix = (*objectPath[objectId])(renderTime);
+        GLKMatrix4 transformationMatrix = (*transformMatrixArray[objectId])(renderTime);
         
         glBindVertexArray(vaObject);
-        glUniformMatrix4fv(modelOffsetUniform, 1, GL_FALSE, (GLfloat *)&translationMatrix);
+        glUniformMatrix4fv(modelOffsetUniform, 1, GL_FALSE, (GLfloat *)&transformationMatrix);
         glDrawElements(GL_TRIANGLES, sizeof(indexData)/sizeof(GLshort), GL_UNSIGNED_SHORT, 0);
         
     }
@@ -415,7 +415,7 @@ const GLshort indexData[] =
 
 }
 
-#pragma mark motion path calculation functions
+#pragma mark motion transformtion calculation functions
 
 // this function has a static translation but scales and rotates according to the
 // current time offset
@@ -500,9 +500,9 @@ GLKMatrix4 bottomCircleOffset(GLfloat renderTime)
 
 
 // set up an array of offset functions
-typedef GLKMatrix4 (*offsetFunction_t)(const GLfloat renderTime);
+typedef GLKMatrix4 (*transformFunction_t)(const GLfloat renderTime);
 
-offsetFunction_t objectPath[3] = {
+transformFunction_t transformMatrixArray[3] = {
     &stationaryOffset,
     &ovalOffset,
     &bottomCircleOffset
